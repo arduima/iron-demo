@@ -15,9 +15,9 @@ dependencies:
 
 test:
   override:
-    - ./gradlew test
-  post:
     - ./gradlew build
+  post:
+    - docker info
     - docker build -t $IMAGE_NAME .
 
 deployment:
@@ -27,4 +27,6 @@ deployment:
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
       - docker push $IMAGE_NAME
       - curl -sSL https://cli.iron.io/install | sh
+      - set IRON_TOKEN=$IRON_TOKEN
+      - set IRON_PROJECT_ID=$IRON_PROJECT_ID
       - iron register $IMAGE_NAME
