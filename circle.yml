@@ -34,9 +34,9 @@ deployment:
     commands:
       - ./gradlew build
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-      - docker build -t $IMAGE_NAME .
-      - docker push $IMAGE_NAME
+      - docker build -t $IMAGE_NAME_STAGING .
+      - docker push $IMAGE_NAME_STAGING
       - curl -sSL https://cli.iron.io/install | sh
       - set IRON_TOKEN=$IRON_TOKEN_STAGING
-      - set IRON_PROJECT_ID=$IRON_PROJECT_ID_STAGEING
-      - iron register $IMAGE_NAME
+      - set IRON_PROJECT_ID=$IRON_PROJECT_ID_STAGING
+      - iron register $IMAGE_NAME_STAGING
