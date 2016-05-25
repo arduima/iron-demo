@@ -13,6 +13,6 @@ public class IronDemoApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println("Hello Iron.io");
+		System.out.println("Hello Iron.io Staging");
 	}
 }
