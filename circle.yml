@@ -1,0 +1,30 @@
+machine:
+  java:
+    version: oraclejdk8
+  services:
+    - docker
+
+general:
+  branches:
+    only:
+      - master
+
+dependencies:
+  override:
+    - ./gradlew dependencies
+
+test:
+  override:
+    - ./gradlew test
+  post:
+    - ./gradlew build
+    - docker build -t $IMAGE_NAME .
+
+deployment:
+  hub:
+    branch: master
+    commands:
+      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+      - docker push $IMAGE_NAME
+      - curl -sSL https://cli.iron.io/install | sh
+      - iron register $IMAGE_NAME
