@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.003s</div>
+<div class="counter">0.002s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">contextLoads</td>
-<td>0.003s</td>
+<td>0.002s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,33 +87,33 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>19:55:40.469 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.arduima.IronDemoApplicationTests]
-19:55:40.477 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-19:55:40.483 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-19:55:40.496 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.arduima.IronDemoApplicationTests] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
-19:55:40.523 [Test worker] DEBUG org.springframework.test.context.support.DefaultTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@61e06848 declaringClass = 'com.arduima.IronDemoApplicationTests', classes = '{class com.arduima.IronDemoApplication}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
-19:55:40.530 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.arduima.IronDemoApplicationTests]: class path resource [com/arduima/IronDemoApplicationTests-context.xml] does not exist
-19:55:40.531 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.arduima.IronDemoApplicationTests]: class path resource [com/arduima/IronDemoApplicationTestsContext.groovy] does not exist
-19:55:40.531 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.arduima.IronDemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-19:55:40.533 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.arduima.IronDemoApplicationTests]
-19:55:40.537 [Test worker] DEBUG org.springframework.test.context.support.DefaultTestContextBootstrapper - @TestExecutionListeners is not present for class [com.arduima.IronDemoApplicationTests]: using defaults.
-19:55:40.545 [Test worker] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-19:55:40.556 [Test worker] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
-19:55:40.557 [Test worker] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
-19:55:40.558 [Test worker] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
-19:55:40.559 [Test worker] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4fba4ac7, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4abd0d1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@21d414f3]
-19:55:40.562 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.arduima.IronDemoApplicationTests]
-19:55:40.563 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.arduima.IronDemoApplicationTests]
-19:55:40.564 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.arduima.IronDemoApplicationTests]
-19:55:40.564 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.arduima.IronDemoApplicationTests]
-19:55:40.568 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@6da07d47 testClass = IronDemoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@7d9fd2ab testClass = IronDemoApplicationTests, locations = '{}', classes = '{class com.arduima.IronDemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
-19:55:40.569 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.arduima.IronDemoApplicationTests]
-19:55:40.569 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.arduima.IronDemoApplicationTests]
-19:55:40.571 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@6da07d47 testClass = IronDemoApplicationTests, testInstance = com.arduima.IronDemoApplicationTests@52105ccc, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@7d9fd2ab testClass = IronDemoApplicationTests, locations = '{}', classes = '{class com.arduima.IronDemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]]].
-19:55:40.665 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
-19:55:40.668 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
-19:55:40.668 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
-19:55:40.670 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [integrationTest] PropertySource with search precedence immediately lower than [systemEnvironment]
+<pre>20:44:55.750 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.arduima.IronDemoApplicationTests]
+20:44:55.761 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+20:44:55.772 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+20:44:55.785 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.arduima.IronDemoApplicationTests] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+20:44:55.817 [Test worker] DEBUG org.springframework.test.context.support.DefaultTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@67fe560 declaringClass = 'com.arduima.IronDemoApplicationTests', classes = '{class com.arduima.IronDemoApplication}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
+20:44:55.825 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.arduima.IronDemoApplicationTests]: class path resource [com/arduima/IronDemoApplicationTests-context.xml] does not exist
+20:44:55.826 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.arduima.IronDemoApplicationTests]: class path resource [com/arduima/IronDemoApplicationTestsContext.groovy] does not exist
+20:44:55.826 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.arduima.IronDemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+20:44:55.829 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.arduima.IronDemoApplicationTests]
+20:44:55.834 [Test worker] DEBUG org.springframework.test.context.support.DefaultTestContextBootstrapper - @TestExecutionListeners is not present for class [com.arduima.IronDemoApplicationTests]: using defaults.
+20:44:55.842 [Test worker] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+20:44:55.851 [Test worker] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+20:44:55.852 [Test worker] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+20:44:55.852 [Test worker] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+20:44:55.854 [Test worker] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6e2f34ce, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@18121a2e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@532872d6]
+20:44:55.858 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.arduima.IronDemoApplicationTests]
+20:44:55.858 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.arduima.IronDemoApplicationTests]
+20:44:55.861 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.arduima.IronDemoApplicationTests]
+20:44:55.862 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.arduima.IronDemoApplicationTests]
+20:44:55.865 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@18b7cc29 testClass = IronDemoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@12c38925 testClass = IronDemoApplicationTests, locations = '{}', classes = '{class com.arduima.IronDemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+20:44:55.866 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.arduima.IronDemoApplicationTests]
+20:44:55.866 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.arduima.IronDemoApplicationTests]
+20:44:55.868 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@18b7cc29 testClass = IronDemoApplicationTests, testInstance = com.arduima.IronDemoApplicationTests@72ddb8c8, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@12c38925 testClass = IronDemoApplicationTests, locations = '{}', classes = '{class com.arduima.IronDemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]]].
+20:44:55.966 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+20:44:55.968 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+20:44:55.968 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+20:44:55.970 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [integrationTest] PropertySource with search precedence immediately lower than [systemEnvironment]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -123,10 +123,11 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v1.3.5.RELEASE)
 
-2016-05-24 19:55:40.957  INFO 5510 --- [    Test worker] com.arduima.IronDemoApplicationTests     : Starting IronDemoApplicationTests on Dimitris-MacBook-Pro-2.local with PID 5510 (/Users/dkoshkin/Documents/Development/Medium/irondemo/build/classes/test started by dkoshkin in /Users/dkoshkin/Documents/Development/Medium/irondemo)
-2016-05-24 19:55:40.958  INFO 5510 --- [    Test worker] com.arduima.IronDemoApplicationTests     : No active profile set, falling back to default profiles: default
-2016-05-24 19:55:41.006  INFO 5510 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7c7c6d9d: startup date [Tue May 24 19:55:41 EDT 2016]; root of context hierarchy
-2016-05-24 19:55:41.774  INFO 5510 --- [    Test worker] com.arduima.IronDemoApplicationTests     : Started IronDemoApplicationTests in 1.099 seconds (JVM running for 1.942)
+2016-05-24 20:44:56.271  INFO 6221 --- [    Test worker] com.arduima.IronDemoApplicationTests     : Starting IronDemoApplicationTests on Dimitris-MacBook-Pro-2.local with PID 6221 (/Users/dkoshkin/Documents/Development/Medium/irondemo/build/classes/test started by dkoshkin in /Users/dkoshkin/Documents/Development/Medium/irondemo)
+2016-05-24 20:44:56.272  INFO 6221 --- [    Test worker] com.arduima.IronDemoApplicationTests     : No active profile set, falling back to default profiles: default
+2016-05-24 20:44:56.337  INFO 6221 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5962784c: startup date [Tue May 24 20:44:56 EDT 2016]; root of context hierarchy
+Hello Iron.io
+2016-05-24 20:44:57.123  INFO 6221 --- [    Test worker] com.arduima.IronDemoApplicationTests     : Started IronDemoApplicationTests in 1.148 seconds (JVM running for 2.03)
 </pre>
 </span>
 </div>
@@ -138,7 +139,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 2.13</a> at May 24, 2016 7:55:41 PM</p>
+<a href="http://www.gradle.org">Gradle 2.13</a> at May 24, 2016 8:44:57 PM</p>
 </div>
 </div>
 </body>
